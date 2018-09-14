@@ -18,9 +18,10 @@ $icon-check: "\EA06";
 $icon-facebook: "\EA07";
 $icon-in: "\EA08";
 $icon-mail: "\EA09";
-$icon-search: "\EA0A";
-$icon-star: "\EA0B";
-$icon-twitter: "\EA0C";
+$icon-people: "\EA0A";
+$icon-search: "\EA0B";
+$icon-star: "\EA0C";
+$icon-twitter: "\EA0D";
 
 
 %icon {
@@ -48,6 +49,7 @@ $icon-twitter: "\EA0C";
 .icon-facebook:before { content: $icon-facebook; }
 .icon-in:before { content: $icon-in; }
 .icon-mail:before { content: $icon-mail; }
+.icon-people:before { content: $icon-people; }
 .icon-search:before { content: $icon-search; }
 .icon-star:before { content: $icon-star; }
 .icon-twitter:before { content: $icon-twitter; }

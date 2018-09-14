@@ -17,6 +17,18 @@
           letter-spacing: 0.3px
           color: $white
           line-height: 1
+          position: relative
+          &:before
+            content: ''
+            width: 0%
+            height: 1px
+            background: $white
+            position: absolute
+            bottom: -3px
+            +tr
+          &:hover
+            &:before
+              width: 100%
         li
           margin-bottom: 25px
           line-height: 1
@@ -72,6 +84,8 @@
       a
         font-size: 38px
         color: $white
+        &:hover
+          color: $orange-red
   &__email
     margin-top: 75px
     border-radius: 10px
@@ -98,6 +112,11 @@
         font-size: 18px
         padding-left: 3px
         color: $white
+        border: 1px solid $orange-red
+        +tr
+        &:hover
+          background: none
+          color: $orange-red
   &__bottom
     background-color: $twilight-blue-two
     padding: 40px 0
@@ -119,6 +138,8 @@
         +r(767)
           line-height: 2
           font-size: 15px
+      a:hover
+        color: $orange-red
       span
         margin: 0 15px
         +r(767)

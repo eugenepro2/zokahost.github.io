@@ -23,7 +23,7 @@
                 <div class="header__logo"><img src="img/logo.png" alt=""></div>
               </div>
               <div class="col-sm-6 col-xs-12">
-                <div class="header__btn"><a href="#" class="btn btn-primary">Live Chat</a><a href="#" class="btn btn-secondary">Client Area</a></div>
+                <div class="header__btn"><a href="#" class="btn btn-primary">Live Chat</a><a href="#pop-up" rel="modal:open" class="btn btn-secondary">Client Area</a></div>
               </div>
             </div>
           </div>
@@ -47,6 +47,26 @@
           </div>
         </div>
       </header>
+      <div class="header-fixed">
+        <div class="menu-open"><span></span></div>
+        <div class="container">
+          <div class="row middle-xs">
+            <div class="col-md-7 col-sm-8 col-xs-12">
+              <ul>
+                <li><img src="img/logo.png" alt=""></li>
+                <li class="hidden-xs"><a href="#">Domains</a></li>
+                <li class="hidden-xs"><a href="#">Hosting</a></li>
+                <li class="hidden-xs"><a href="#">VPS</a></li>
+                <li class="hidden-xs"><a href="#">Security</a></li>
+                <li class="hidden-xs"><a href="#">About</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-3 col-md-offset-3 col-sm-offset-1 col-xs-12">
+              <div class="header-fixed__block"><a href="#" class="header-fixed__chat"><i class="icon icon-chat"></i></a><a href="#" class="header-fixed__user"><i class="icon icon-people"></i></a><a href="#" class="header-fixed__basket">1<i class="icon icon-basket"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!--END header-->
       <div class="fix-icon"><a href="#"><i class="icon icon-mail"></i>E-Mail</a><a href="#"><i class="icon icon-chat"></i>Chat</a></div>
       <section class="intro">
@@ -465,6 +485,12 @@
           <li><a href="#">Security</a></li>
           <li><a href="#">About</a></li>
         </ul><a href="#" class="menu__basket">1<i class="icon icon-basket"></i></a>
+      </div>
+      <div id="pop-up" class="modal pop-up"><a href="#" rel="modal:close" class="modal-close">Close</a>
+        <h2>Stay Updated</h2>
+        <h3>Get 10% Off</h3>
+        <p>Subscribe to our weekly Newsletter to get new and special offers directly to your inbox.</p>
+        <div class="pop-up__input"><input type="email" placeholder="Your Email Address"><input type="submit" value="Submit" class="btn btn-primary"></div>
       </div>
     </div>
     <!--END out-->

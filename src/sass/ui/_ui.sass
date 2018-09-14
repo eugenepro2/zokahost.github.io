@@ -17,6 +17,18 @@ a, label
   display: flex
 
 
++r(767)
+	.hidden-xs
+		display: none !important
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+	.hidden-sm
+		display: none !important
++rmin(1024)
+	.hidden-md
+		display: none !important
+
+
+
 .btn
   padding: 13px 34px
   border-radius: 25.5px
@@ -27,6 +39,8 @@ a, label
   display: inline-block
   +r(767)
     padding: 13px 16px
+  &:hover
+    box-shadow: 0 0 14px 0 rgba($white, 0.66)
   &-primary
     background-image: linear-gradient(156deg, #ff416c, $orange-red)
     color: $white
@@ -116,3 +130,35 @@ a, label
       font-size: 28px
     &:hover
       background: rgba(0, 0, 0, 0.2)
+
+
+
+
+.menu-open
+  width: 30px
+  height: 20px
+  position: absolute
+  right: 15px
+  top: 25px
+  display: none
+  +r(767)
+    display: block
+  span
+    width: 30px
+    height: 3px
+    border-radius: 2px
+    background: $white
+    display: block
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 30px
+      height: 3px
+      border-radius: 2px
+      background: $white
+      display: block
+    &:before
+      top: 50%
+      transform: translate(0, -50%)
+    &:after
+      bottom: 0

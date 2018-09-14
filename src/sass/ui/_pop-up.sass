@@ -12,7 +12,7 @@
   width: 260px
   background-color: $marine
   position: fixed
-  left: -110%
+  right: -110%
   top: 0
   transition: all 1s
   z-index: 999
@@ -21,7 +21,7 @@
     width: 30px
     height: 30px
     position: absolute
-    right: 15px
+    left: 15px
     top: 25px
     span
       display: block
@@ -41,7 +41,7 @@
         left: 0
         transform: rotate(-45deg)
   &.active
-    left: 0
+    right: 0
   ul
     padding: 0 15px
   li
@@ -76,3 +76,91 @@
       margin-left: 20px
       position: relative
       top: -3px
+
+
+
+
+
+.blocker
+  z-index: 99
+  background: rgba($twilight-blue, 0.7)
+  +r(1024)
+    padding: 0
+.modal a.close-modal
+  display: none !important
+
+.pop-up
+  max-width: 800px
+  min-height: 560px
+  padding: 30px 70px
+  background-image: url('../img/pop-up__bg.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50% 50%
+  width: 95%
+  +r(767)
+    padding: 20px 10px
+    min-height: auto
+  .modal-close
+    font-size: 17px
+    font-weight: 500
+    line-height: 1.09
+    color: $brownish-grey
+    text-align: right
+    display: block
+    margin-bottom: 30px
+    position: relative
+    right: -20px
+    +r(767)
+      right: 0
+    &:hover
+      color: $orange-red
+  h2
+    font-size: 81px
+    font-weight: 500
+    font-style: normal
+    line-height: 1.3
+    color: $twilight-blue
+    +r(620)
+      font-size: 60px
+    +r(470)
+      font-size: 40px
+  h3
+    background-image: linear-gradient(156deg, #ff416c, $orange-red), linear-gradient(#ff435e, #ff435e)
+    font-size: 81px
+    font-weight: 600
+    font-style: normal
+    line-height: 1
+    -webkit-background-clip: text
+    background-clip: text
+    -webkit-text-fill-color: transparent
+    text-transform: uppercase
+    margin-bottom: 45px
+    +r(620)
+      font-size: 60px
+    +r(470)
+      font-size: 40px
+  p
+    font-size: 17px
+    font-weight: 500
+    line-height: 1.09
+    color: $twilight-blue
+    margin-right: 100px
+    +r(767)
+      margin-right: 0
+  &__input
+    width: 100%
+    height: 67px
+    background: $white
+    margin-top: 100px
+    border-radius: 10px
+    +center
+    justify-content: space-between
+    padding: 14px 18px
+    input[type="email"]
+      width: 100%
+      font-size: 17px
+      font-weight: 500
+      line-height: 1.09
+      color: $brownish-grey
+      +placeholder-color($brownish-grey)

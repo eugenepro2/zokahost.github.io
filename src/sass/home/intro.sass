@@ -84,12 +84,16 @@
         text-align: left
         +r(600)
           width: 100%
+        &:hover
+          div
+            color: $orange-red
       .selectize-control.single .selectize-input.input-active
         background-color: $twilight-blue
       .selectize-input>*
         font-size: 20.4px
         font-weight: 600
         color: $white
+        +tr
       .selectize-dropdown
         border-radius: 25px
         background-color: $twilight-blue
@@ -133,3 +137,5 @@
       font-size: 20px
       font-weight: 500
       color: $white
+      &:hover
+        color: $orange-red

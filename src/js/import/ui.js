@@ -1,4 +1,5 @@
 import '../lib/selectize.min';
+import modal from 'jquery-modal';
 
 
 //select
@@ -15,4 +16,23 @@ $('.bg, .menu-close').on('click', function() {
   $('.menu').removeClass('active');
   $('.bg').fadeOut();
   $('body').css({'overflow': 'visible'});
+});
+
+
+//fixed header
+$(window).scroll(function() {
+  if($('body, html').scrollTop() > 300) {
+    $('.header-fixed').css({'top': '-1px'});
+  } else{
+    $('.header-fixed').css({'top': '-130px'});
+  }
+});
+
+
+//pop-up
+$('[rel="modal:open"]').on('click', function(event) {
+  $(this).modal({
+    fadeDuration: 200
+  });
+  return false;
 });

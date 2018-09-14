@@ -11,7 +11,7 @@ header.header
         .col-sm-6.col-xs-12
           .header__btn
             a(href="#").btn.btn-primary Live Chat
-            a(href="#").btn.btn-secondary Client Area
+            a(href="#pop-up" rel="modal:open").btn.btn-secondary Client Area
   .header__nav
     .container
       .row.middle-xs
@@ -31,4 +31,31 @@ header.header
         .col-md-6.col-sm-4.end-xs
           a(href="#").header__basket 1
             i.icon.icon-basket
+.header-fixed
+  .menu-open
+    span
+  .container
+    .row.middle-xs
+      .col-md-7.col-sm-8.col-xs-12
+        ul
+          li
+            img(src="img/logo.png", alt="")
+          li.hidden-xs
+            a(href="#") Domains
+          li.hidden-xs
+            a(href="#") Hosting
+          li.hidden-xs
+            a(href="#") VPS
+          li.hidden-xs
+            a(href="#") Security
+          li.hidden-xs
+            a(href="#") About
+      .col-md-2.col-sm-3.col-md-offset-3.col-sm-offset-1.col-xs-12
+        .header-fixed__block
+          a(href="#").header-fixed__chat
+            i.icon.icon-chat
+          a(href="#").header-fixed__user
+            i.icon.icon-people
+          a(href="#").header-fixed__basket 1
+              i.icon.icon-basket
 //END header
