@@ -1,0 +1,59 @@
+.reviews
+  padding: 80px 0
+  background-color: $marine
+  overflow: hidden
+  +r(767)
+    padding: 40px 0
+  h2
+    margin-bottom: 50px
+    &:before
+      width: 132px
+      left: 50%
+      transform: translate(-50%)
+  .swiper-reviews
+    padding: 100px 275px
+    overflow: visible !important
+    +r(1024)
+      padding: 100px 200px
+    +r(767)
+      padding: 0px 100px 60px
+    +r(550)
+      padding: 0px 20px 60px
+    +r(767)
+
+  &__block
+    border-radius: 11px
+    background-color: $white
+    padding: 45px 50px
+    +r(767)
+      padding: 30px 20px
+      padding-right: 25px
+    h3
+      font-size: 20px
+      font-weight: 500
+      font-style: normal
+      line-height: 1
+      color: $gunmetal
+      margin-bottom: 15px
+    .star
+      margin-bottom: 35px
+    p
+      font-size: 17px
+      line-height: 1.2
+      color: $dark-grey-blue
+      position: relative
+      padding-left: 25px
+      &:after, &:before
+        content: '“'
+        position: absolute
+        font-size: 62.5px
+        font-weight: normal
+        line-height: 1
+        color: $lightish-red
+      &:after
+        left: 0
+        top: 0
+      &:before
+        right: -20px
+        bottom: 0
+        transform: rotate(180deg)

@@ -1,0 +1,118 @@
+html
+body
+  font-family: 'Poppins', sans-serif
+  box-sizing: border-box
+  position: relative
+.container
+  width: 100% !important
+  max-width: 1150px
+  box-sizing: border-box
+  +r(1170)
+    padding: 0 15px
+a, label
+  text-decoration: none
+  transition: all 0.3s
+  cursor: pointer
+.flex
+  display: flex
+
+
+.btn
+  padding: 13px 34px
+  border-radius: 25.5px
+  font-size: 20px
+  font-weight: 600
+  line-height: 1
+  letter-spacing: -0.4px
+  display: inline-block
+  +r(767)
+    padding: 13px 16px
+  &-primary
+    background-image: linear-gradient(156deg, #ff416c, $orange-red)
+    color: $white
+  &-secondary
+    background-color: $pale-grey-three
+    color: $dark-teal
+
+.heading
+  +center
+  h2
+    font-size: 40px
+    font-weight: 600
+    line-height: 0.9
+    color: $dark-grey-blue
+    position: relative
+    display: inline-block
+    padding-bottom: 30px
+    +r(767)
+      font-size: 25px
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      bottom: 0px
+      height: 15px
+      background-image: url('../img/line.png')
+      background-repeat: no-repeat
+      background-size: cover
+  &-secondary
+    h2
+      color: $white
+
+
+.star
+  display: flex
+  width: 170px
+  justify-content: space-between
+  a
+    width: 30px
+    height: 30px
+    +center
+    background: #228e57
+    border-radius: 3px
+    i
+      color: $white
+      font-size: 20px
+  &-secondary
+    width: 120px
+    a
+      width: 21px
+      height: 21px
+
+
+
+.fix-icon
+  position: fixed
+  top: 50%
+  right: 0
+  border-radius: 11px
+  border-top-right-radius: 0px
+  border-bottom-right-radius: 0px
+  box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.16)
+  background-color: $pale-grey-three
+  border: solid 1px #bbbbbb
+  border-right: none
+  z-index: 99
+  +center
+  flex-direction: column
+  justify-content: space-around
+  overflow: hidden
+  +r(767)
+    top: auto
+    bottom: 0
+  a
+    width: 117px
+    height: 117px
+    +center
+    flex-direction: column
+    font-size: 17px
+    font-weight: 500
+    color: $marine
+    +r(767)
+      width: 70px
+      height: 70px
+      font-size: 14px
+    i
+      font-size: 28px
+    &:hover
+      background: rgba(0, 0, 0, 0.2)

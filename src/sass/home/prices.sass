@@ -1,0 +1,149 @@
+.prices
+  padding: 60px 0
+  background-color: $pale-grey-two
+  &__block
+    border-radius: 12px
+    background-color: $white
+    padding: 40px
+    position: relative
+    width: calc(100% - 25px)
+    margin-left: 20px
+    +r(1040)
+      width: 100%
+      margin: 0
+      margin-bottom: 30px
+    +r(767)
+      padding: 30px 20px
+    &__title
+      border-bottom: 2px solid rgba($warm-blue, 0.07)
+      position: relative
+      h2
+        font-size: 30px
+        font-weight: 500
+        font-style: normal
+        line-height: 1.13
+        color: $twilight-blue
+        min-height: 65px
+      p
+        font-size: 17px
+        font-weight: normal
+        line-height: 1.18
+        color: $watermelon-two
+        padding: 25px 0
+    &__value
+      padding-top: 30px
+      padding-bottom: 40px
+      border-bottom: 2px solid rgba($warm-blue, 0.07)
+      p, b
+        font-size: 17px
+        font-weight: normal
+        color: $cool-grey-two
+      p
+
+      b
+        text-transform: uppercase
+        span
+          background-image: linear-gradient(156deg, #ff416c, $orange-red), linear-gradient($lightish-red, $lightish-red)
+          font-size: 60px
+          font-weight: 600
+          line-height: 1
+          letter-spacing: -1.2px
+          text-align: left
+          -webkit-background-clip: text
+          background-clip: text
+          -webkit-text-fill-color: transparent
+          margin-right: 4px
+    ul
+      padding: 45px 0
+      li
+        font-size: 16px
+        font-weight: normal
+        line-height: 2.12
+        color: $twilight-blue
+        i
+          color: $watermelon-two
+          margin-right: 15px
+          font-weight: 900
+    &__btn
+      a
+        border-radius: 21.5px
+        background-color: $pale-grey-three
+        width: 100%
+        font-size: 17px
+        font-weight: 500
+        line-height: 1
+        letter-spacing: 0.7px
+        color: $twilight-blue
+        +center
+        justify-content: space-between
+        padding: 0 25px
+        height: 45px
+        i
+          +tr
+        &:hover
+          background-color: $twilight-blue
+          color: $white
+    &__sale
+      +center
+      background-image: url('../img/circle.png')
+      background-repeat: no-repeat
+      background-size: contain
+      width: 90px
+      height: 90px
+      position: absolute
+      bottom: -45px
+      right: -65px
+      +r(767)
+        right: -30px
+        width: 80px
+        height: 80px
+      p
+        font-size: 21px
+        font-weight: 600
+        line-height: 0.8
+        letter-spacing: 1.3px
+        color: $very-light-blue
+        +r(767)
+          font-size: 17px
+    &-secondary
+      display: flex
+      margin-top: 40px
+      align-items: center
+      +r(1140)
+        flex-wrap: wrap
+      .prices__block__title
+        border-bottom: none
+        border-right: 2px solid rgba($warm-blue, 0.07)
+        padding-right: 45px
+        +r(1140)
+          width: 100%
+          border: none
+          margin-bottom: 20px
+        h2
+          min-height: auto
+        p
+          padding: 0
+          padding-bottom: 15px
+      .prices__block__value
+        border-bottom: none
+        border-right: 2px solid rgba($warm-blue, 0.07)
+        padding: 0 40px
+        width: 280px
+        +r(1140)
+          width: calc(100% - 320px)
+          padding: 0
+        +r(767)
+          width: 100%
+          border: none
+          padding-bottom: 20px
+      .prices__block__btn
+        padding-left: 55px
+        +r(1140)
+          width: 300px
+        +r(767)
+          width: 100%
+          padding: 0
+        a
+          width: 267px
+          +r(767)
+            width: 100%

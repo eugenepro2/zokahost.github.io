@@ -1,0 +1,55 @@
+.advantages
+  background: $pale-grey
+  padding: 100px 0 80px
+  +r(767)
+    padding: 40px 0
+  h2
+    margin-bottom: 50px
+    &:before
+      width: 132px
+      left: 50%
+      transform: translate(-50%)
+  &__block
+    border-radius: 11px
+    background-color: $pale-grey-four
+    display: block
+    padding: 40px 30px
+    width: calc(100% - 40px)
+    margin-bottom: 60px
+    margin-left: 30px
+    min-height: 315px
+    +r(1024)
+      min-height: 295px
+      width: 100%
+      margin-left: 0
+      margin-bottom: 20px
+    +r(767)
+      min-height: auto
+    &:hover
+      background-color: $twilight-blue
+      .advantages__block__img
+        img
+          opacity: 0
+      .advantages__block__text
+        h2
+          color: $white
+        p
+          color: $white-47
+    &__img
+      height: 90px
+      +center
+      +tr
+    &__text
+      h2
+        font-size: 20px
+        font-weight: 500
+        font-style: normal
+        color: $twilight-blue
+        line-height: 1
+        margin-bottom: 15px
+        +tr
+      p
+        font-size: 16px
+        line-height: 1.47
+        color: $warm-grey
+        +tr

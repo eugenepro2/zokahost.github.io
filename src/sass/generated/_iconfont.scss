@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('eot'),
+    url('../fonts/iconfont.woff2') format('woff2'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon-arrow-down: "\EA01";
+$icon-arrow-left: "\EA02";
+$icon-arrow-right: "\EA03";
+$icon-basket: "\EA04";
+$icon-chat: "\EA05";
+$icon-check: "\EA06";
+$icon-facebook: "\EA07";
+$icon-in: "\EA08";
+$icon-mail: "\EA09";
+$icon-search: "\EA0A";
+$icon-star: "\EA0B";
+$icon-twitter: "\EA0C";
+
+
+%icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @extend %icon;
+  display: inline-block;
+}
+
+.icon-arrow-down:before { content: $icon-arrow-down; }
+.icon-arrow-left:before { content: $icon-arrow-left; }
+.icon-arrow-right:before { content: $icon-arrow-right; }
+.icon-basket:before { content: $icon-basket; }
+.icon-chat:before { content: $icon-chat; }
+.icon-check:before { content: $icon-check; }
+.icon-facebook:before { content: $icon-facebook; }
+.icon-in:before { content: $icon-in; }
+.icon-mail:before { content: $icon-mail; }
+.icon-search:before { content: $icon-search; }
+.icon-star:before { content: $icon-star; }
+.icon-twitter:before { content: $icon-twitter; }

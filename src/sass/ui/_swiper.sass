@@ -1,0 +1,28 @@
+.swiper
+  position: relative
+  .swiper-container
+    width: 100%
+  .swiper-button-prev, .swiper-button-next
+    background: none
+    height: 60px
+    width: 30px
+    +center
+    margin: 0 80px
+    +r(1450)
+      margin: 0 10px
+    i
+      font-size: 60px
+      line-height: 1
+      color: $orange-red
+  .swiper-pagination-bullet
+    margin: 0 40px !important
+    width: 80px
+    height: 15px
+    border-radius: 8px
+    background-color: $pale-grey-three
+    opacity: 1
+    +r(767)
+      margin: 0 5px !important
+      width: 40px
+  .swiper-pagination-bullet-active
+    background-color: $orangey-red

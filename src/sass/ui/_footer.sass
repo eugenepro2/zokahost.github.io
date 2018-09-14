@@ -1,0 +1,182 @@
+.footer
+  background-color: $marine
+  position: relative
+  &__top
+    padding-top: 80px
+    padding-bottom: 60px
+    +r(767)
+      padding: 40px 0
+    &__nav
+      margin-top: 110px
+      +r(767)
+        margin-top: 40px
+      ul
+        margin-top: 70px
+        a
+          font-size: 18px
+          letter-spacing: 0.3px
+          color: $white
+          line-height: 1
+        li
+          margin-bottom: 25px
+          line-height: 1
+    h2
+      font-size: 24px
+      font-weight: 600
+      letter-spacing: 0.4px
+      color: $white
+      position: relative
+      display: inline-block
+      &:before
+        content: ''
+        position: absolute
+        width: 100%
+        bottom: -20px
+        height: 15px
+        background-image: url('../img/line.png')
+        background-repeat: no-repeat
+        background-size: cover
+  &__logo
+    +r(767)
+      +center
+      margin-bottom: 40px
+  &__btn
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    +r(767)
+      justify-content: center
+    a:first-child
+      margin-right: 25px
+  &__connect
+    margin-top: 110px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    +r(1024)
+      align-items: center
+  &__social
+    +r(1024)
+      width: 80%
+    ul
+      display: flex
+      margin-top: 66px
+      margin-bottom: 85px
+      +r(1024)
+        justify-content: space-between
+        width: 100%
+      li
+        margin-left: 50px
+        +r(1024)
+          margin-left: 0
+      a
+        font-size: 38px
+        color: $white
+  &__email
+    margin-top: 75px
+    border-radius: 10px
+    background-color: $white
+    width: 100%
+    padding: 15px 20px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    input
+      font-size: 17px
+      font-weight: 500
+      line-height: 1.09
+      color: $brownish-grey
+      +placeholder-color($brownish-grey)
+    label
+      i
+        width: 39px
+        height: 39px
+        border-radius: 100%
+        background-color: $orange-red
+        +center
+        display: inline-flex
+        font-size: 18px
+        padding-left: 3px
+        color: $white
+  &__bottom
+    background-color: $twilight-blue-two
+    padding: 40px 0
+    +r(1024)
+      padding: 25px 0
+    &__link
+      padding-left: 60px
+      +r(1300)
+        padding-left: 95px
+      +r(1024)
+        +center
+        padding: 0
+      +r(767)
+        flex-direction: column
+      a, span
+        font-size: 18px
+        letter-spacing: 0.3px
+        color: $white
+        +r(767)
+          line-height: 2
+          font-size: 15px
+      span
+        margin: 0 15px
+        +r(767)
+          display: none
+    p
+      font-size: 18px
+      letter-spacing: 0.3px
+      color: $white
+      +r(1024)
+        text-align: center
+        margin-top: 20px
+      +r(767)
+        font-size: 11px
+      img
+        margin-right: 13px
+  &__dicount
+    background-image: url('../img/footer__dicount.png')
+    background-repeat: no-repeat
+    background-size: contain
+    width: 345px
+    height: 345px
+    +center
+    position: absolute
+    bottom: 0
+    left: 0
+    overflow: hidden
+    +r(1600)
+      width: 260px
+      height: 260px
+    +r(1440)
+      width: 200px
+      height: 200px
+    +r(1300)
+      width: 160px
+      height: 160px
+    +r(500)
+      display: none
+    &__block
+      transform: rotate(45deg)
+      padding-top: 200px
+      +r(1600)
+        padding-top: 150px
+      +r(1440)
+        padding-top: 120px
+      +r(1300)
+        padding-top: 90px
+      h3, p
+        font-size: 27px
+        font-weight: 600
+        line-height: 1.38
+        letter-spacing: -0.4px
+        text-transform: uppercase
+        text-align: center
+        +r(1440)
+          font-size: 20px
+        +r(1300)
+          font-size: 18px
+      h3
+        color: $white
+      p
+        color: $marine
