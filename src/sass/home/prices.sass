@@ -12,6 +12,11 @@
       width: 100%
       margin: 0
       margin-bottom: 30px
+      padding: 15px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      height: 95%
     +r(767)
       padding: 30px 20px
     &__title
@@ -38,8 +43,6 @@
         font-size: 17px
         font-weight: normal
         color: $cool-grey-two
-      p
-
       b
         text-transform: uppercase
         span
@@ -53,6 +56,8 @@
           background-clip: text
           -webkit-text-fill-color: transparent
           margin-right: 4px
+          +r(1024)
+            font-size: 50px
     ul
       padding: 45px 0
       li
@@ -64,6 +69,8 @@
           color: $watermelon-two
           margin-right: 15px
           font-weight: 900
+          +r(1024)
+            margin-right: 7px
     &__btn
       a
         border-radius: 21.5px
@@ -93,6 +100,10 @@
       position: absolute
       bottom: -45px
       right: -65px
+      z-index: 9
+      +r(1024)
+        right: -20px
+        bottom: -60px
       +r(767)
         right: -30px
         width: 80px
